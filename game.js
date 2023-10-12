@@ -7,15 +7,20 @@ var level = 0;
 var started = false;
 
 // Detects when any key is pressed in order to start the game
-$(document).on("keydown", function() {
+$('.start-button').on("click", function() {
     if (!started) {
         nextSequence();
         started = true;
+        $(".start-button").html('Start');
     }
 });
 
 // Detects which button is being pressed and saves it in the pattern array.
 $(".btn").on("click", function() {
+    if (!started) {
+        return;
+    }
+    
     let userClickedColor = $(this).attr("id");
     userClickedPattern.push(userClickedColor);
 
@@ -59,7 +64,8 @@ function checkAnswer(currentLevel) {
             $("body").removeClass("game-over");
         }, 200);
 
-        $("#level-title").text(`Your max score was ${level}, Press Any Key to Restart`);
+        $("#level-title").text(`Your max score was ${level}`);
+        $(".start-button").html('Restart');
         startOver();
     }
 }
