@@ -5,6 +5,14 @@ body {
   margin: 0;
 }
 
+#body-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
 #level-title {
   font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
@@ -13,7 +21,9 @@ body {
 }
 
 .container {
-  display: block;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
   width: 50%;
   margin: auto;
 

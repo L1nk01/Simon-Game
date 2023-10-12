@@ -6,6 +6,7 @@
   <title>Simon</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="breakpoints.css">
+  <meta meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 
   <script
@@ -18,32 +19,20 @@
 </head>
 
 <body>
-  <h1 id="level-title">Press the button to start</h1>
-  <div class="container">
-    <div class="row">
+  <div id="body-container">
+    <h1 id="level-title">Press the button to start</h1>
+    <div class="container">
+        <div type="button" id="green" class="btn green"></div>
 
-      <div type="button" id="green" class="btn green">
+        <div type="button" id="red" class="btn red"></div>
 
-      </div>
+        <div type="button" id="yellow" class="btn yellow"></div>
 
-      <div type="button" id="red" class="btn red">
-
-      </div>
-    </div>
-
-    <div class="row">
-
-      <div type="button" id="yellow" class="btn yellow">
-
-      </div>
-      <div type="button" id="blue" class="btn blue">
-
-      </div>
+        <div type="button" id="blue" class="btn blue"></div>
 
     </div>
-
+    <button class="start-button">Start</button>
   </div>
-  <button class="start-button">Start</button>
 </body>
 
 </html>
