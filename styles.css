@@ -34,8 +34,8 @@ body {
   display: inline-block;
   height: 200px;
   width: 200px;
-  border: 10px solid black;
   border-radius: 20%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) inset, 0 0 20px rgba(0, 0, 0, 0.8) inset, 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .game-over {
@@ -45,18 +45,19 @@ body {
 
 .red {
   background-color: red;
+  background-image: linear-gradient(to bottom, rgb(220, 0, 0), rgb(128, 0, 0), rgb(220, 0, 0));
 }
 
 .green {
-  background-color: green;
+  background-image: linear-gradient(to bottom, rgb(0, 160, 0), rgb(0, 93, 0), rgb(0, 160, 0));
 }
 
 .blue {
-  background-color: blue;
+  background-image: linear-gradient(to bottom, rgb(0, 0, 180), rgb(0, 0, 110), rgb(0, 0, 180));
 }
 
 .yellow {
-  background-color: yellow;
+  background-image: linear-gradient(to bottom, rgb(255, 255, 0), rgb(156, 156, 0), rgb(255, 255, 0));
 }
 
 .pressed {
@@ -65,7 +66,7 @@ body {
 }
 
 .start-button {
-  background-color: #FFFFFF;
+  background: linear-gradient(to bottom, #FFFFFF, #cccccc, #FFFFFF);
   border: 1px solid #222222;
   border-radius: 8px;
   box-sizing: border-box;
