@@ -35,7 +35,6 @@ body {
   height: 200px;
   width: 200px;
   border-radius: 20%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) inset, 0 0 20px rgba(0, 0, 0, 0.8) inset, 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .game-over {
